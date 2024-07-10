@@ -1,6 +1,5 @@
 {
-  "id": "https://spec.openapis.org/oas/3.0/schema/2021-09-28",
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "The description of OpenAPI v3.0.x documents, as defined by https://spec.openapis.org/oas/v3.0.3",
   "type": "object",
   "required": [
@@ -46,8 +45,7 @@
     }
   },
   "patternProperties": {
-    "^x-": {
-    }
+    "^x-": true
   },
   "additionalProperties": false,
   "definitions": {
@@ -91,8 +89,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -112,8 +109,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -132,8 +128,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -157,8 +152,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -182,8 +176,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -327,8 +320,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -340,8 +332,7 @@
         },
         "multipleOf": {
           "type": "number",
-          "minimum": 0,
-          "exclusiveMinimum": true
+          "exclusiveMinimum": 0
         },
         "maximum": {
           "type": "number"
@@ -402,8 +393,7 @@
         },
         "enum": {
           "type": "array",
-          "items": {
-          },
+          "items": true,
           "minItems": 1,
           "uniqueItems": false
         },
@@ -510,8 +500,7 @@
         "format": {
           "type": "string"
         },
-        "default": {
-        },
+        "default": true,
         "nullable": {
           "type": "boolean",
           "default": false
@@ -527,8 +516,7 @@
           "type": "boolean",
           "default": false
         },
-        "example": {
-        },
+        "example": true,
         "externalDocs": {
           "$ref": "#/definitions/ExternalDocumentation"
         },
@@ -541,8 +529,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -586,8 +573,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -634,8 +620,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -652,8 +637,7 @@
             }
           ]
         },
-        "example": {
-        },
+        "example": true,
         "examples": {
           "type": "object",
           "additionalProperties": {
@@ -675,8 +659,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false,
       "allOf": [
@@ -694,16 +677,14 @@
         "description": {
           "type": "string"
         },
-        "value": {
-        },
+        "value": true,
         "externalValue": {
           "type": "string",
           "format": "uri-reference"
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -727,10 +708,8 @@
         },
         "style": {
           "type": "string",
-          "enum": [
-            "simple"
-          ],
-          "default": "simple"
+          "default": "simple",
+          "const": "simple"
         },
         "explode": {
           "type": "boolean"
@@ -757,8 +736,7 @@
           "minProperties": 1,
           "maxProperties": 1
         },
-        "example": {
-        },
+        "example": true,
         "examples": {
           "type": "object",
           "additionalProperties": {
@@ -774,8 +752,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false,
       "allOf": [
@@ -793,8 +770,7 @@
         "^\\/": {
           "$ref": "#/definitions/PathItem"
         },
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -835,8 +811,7 @@
         "^(get|put|post|delete|options|head|patch|trace)$": {
           "$ref": "#/definitions/Operation"
         },
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -922,8 +897,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -952,8 +926,7 @@
             }
           ]
         },
-        "^x-": {
-        }
+        "^x-": true
       },
       "minProperties": 1,
       "additionalProperties": false
@@ -984,8 +957,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1004,8 +976,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1129,8 +1100,7 @@
           "minProperties": 1,
           "maxProperties": 1
         },
-        "example": {
-        },
+        "example": true,
         "examples": {
           "type": "object",
           "additionalProperties": {
@@ -1146,8 +1116,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false,
       "required": [
@@ -1176,9 +1145,7 @@
           ],
           "properties": {
             "in": {
-              "enum": [
-                "path"
-              ]
+              "const": "path"
             },
             "style": {
               "enum": [
@@ -1189,9 +1156,7 @@
               "default": "simple"
             },
             "required": {
-              "enum": [
-                true
-              ]
+              "const": true
             }
           }
         },
@@ -1199,9 +1164,7 @@
           "description": "Parameter in query",
           "properties": {
             "in": {
-              "enum": [
-                "query"
-              ]
+              "const": "query"
             },
             "style": {
               "enum": [
@@ -1218,15 +1181,11 @@
           "description": "Parameter in header",
           "properties": {
             "in": {
-              "enum": [
-                "header"
-              ]
+              "const": "header"
             },
             "style": {
-              "enum": [
-                "simple"
-              ],
-              "default": "simple"
+              "default": "simple",
+              "const": "simple"
             }
           }
         },
@@ -1234,15 +1193,11 @@
           "description": "Parameter in cookie",
           "properties": {
             "in": {
-              "enum": [
-                "cookie"
-              ]
+              "const": "cookie"
             },
             "style": {
-              "enum": [
-                "form"
-              ],
-              "default": "form"
+              "default": "form",
+              "const": "form"
             }
           }
         }
@@ -1269,8 +1224,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1300,9 +1254,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "apiKey"
-          ]
+          "const": "apiKey"
         },
         "name": {
           "type": "string"
@@ -1320,8 +1272,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1343,14 +1294,11 @@
         },
         "type": {
           "type": "string",
-          "enum": [
-            "http"
-          ]
+          "const": "http"
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false,
       "oneOf": [
@@ -1390,9 +1338,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "oauth2"
-          ]
+          "const": "oauth2"
         },
         "flows": {
           "$ref": "#/definitions/OAuthFlows"
@@ -1402,8 +1348,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1416,9 +1361,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "openIdConnect"
-          ]
+          "const": "openIdConnect"
         },
         "openIdConnectUrl": {
           "type": "string",
@@ -1429,8 +1372,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1451,8 +1393,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1479,8 +1420,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1507,8 +1447,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1535,8 +1474,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1568,8 +1506,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     },
@@ -1585,11 +1522,9 @@
         },
         "parameters": {
           "type": "object",
-          "additionalProperties": {
-          }
+          "additionalProperties": true
         },
-        "requestBody": {
-        },
+        "requestBody": true,
         "description": {
           "type": "string"
         },
@@ -1598,8 +1533,7 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false,
       "not": {
@@ -1616,8 +1550,7 @@
         "$ref": "#/definitions/PathItem"
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       }
     },
     "Encoding": {
@@ -1657,10 +1590,10 @@
         }
       },
       "patternProperties": {
-        "^x-": {
-        }
+        "^x-": true
       },
       "additionalProperties": false
     }
-  }
+  },
+  "$id": "https://spec.openapis.org/oas/3.0/schema/2021-09-28"
 }
